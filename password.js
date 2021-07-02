@@ -1,7 +1,14 @@
 // Create a new file called password.js. Write a program that does the following:
 
 // Welcome the user to the password validator tool
-
+function Welcome(val){
+    if(true){
+      return `Welcome!Please enter your password to login`
+    } else {
+      return `Login to access your account.`
+    }
+    }
+    Welcome(true)
 // Prompt the user for a password to validate
 
 // Check if the user’s password meets the following constraint:
