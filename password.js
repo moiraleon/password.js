@@ -11,14 +11,7 @@ function Welcome(val){
     Welcome(true)
 
 // Prompt the user for a password to validate
-// function password(val){
-//     if(true){
-//       return ('Please enter a password containing none of the following characters: ! @ # * _ - ')
-//     } else {
-//       return (`Login to access your account.`)
-//     }
-//     }
-//     password(true)
+// 
 
 function password(val){
     if(true){
@@ -44,4 +37,44 @@ function passwordAuth(password){
     passwordAuth(`Happybug`)
     passwordAuth(`Whydoyourshoessmell`)
     
-    
+    // Adding additional constraints
+    function password(val){
+          if(true){
+            return ('Please enter a password containing none of the following characters: ! @ # * _ - ')
+          } else {
+            return (`Login to access your account.`)
+          }
+          }
+          password(true)
+
+          // Checking for constraints
+          function noAdditionalCharacters(pass){
+            if(pass.includes(`!`)){
+              return ('Please enter a password containing none of the following characters: ! @ # * _ - ')
+            } 
+            else if(pass.includes(`@`)){
+              return ('Please enter a password containing none of the following characters: ! @ # * _ - ')
+            }
+            else if(pass.includes(`#`)){
+              return ('Please enter a password containing none of the following characters: ! @ # * _ - ')
+            }
+            else if(pass.includes(`*`)){
+              return ('Please enter a password containing none of the following characters: ! @ # * _ - ')
+            }
+            else if(pass.includes(`_`)){
+              return ('Please enter a password containing none of the following characters: ! @ # * _ - ')
+            }
+            else if(pass.includes(`-`)){
+              return ('Please enter a password containing none of the following characters: ! @ # * _ - ')
+            }
+              else {
+              return (`Login to access your account.`)
+            }
+            }
+            noAdditionalCharacters(`I like music!`)
+            noAdditionalCharacters(`Party@theWaterpark`)
+            noAdditionalCharacters(`Whatisyour#`)
+            noAdditionalCharacters(`*6789998212`)
+            noAdditionalCharacters(`agoblinlives_thebridge`)
+            noAdditionalCharacters(`high-five`)
+            
