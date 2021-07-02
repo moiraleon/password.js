@@ -49,32 +49,56 @@ function passwordAuth(password){
 
           // Checking for constraints
           function noAdditionalCharacters(pass){
-            if(pass.includes(`!`)){
-              return ('Please enter a password containing none of the following characters: ! @ # * _ - ')
-            } 
-            else if(pass.includes(`@`)){
-              return ('Please enter a password containing none of the following characters: ! @ # * _ - ')
-            }
-            else if(pass.includes(`#`)){
-              return ('Please enter a password containing none of the following characters: ! @ # * _ - ')
-            }
-            else if(pass.includes(`*`)){
-              return ('Please enter a password containing none of the following characters: ! @ # * _ - ')
-            }
-            else if(pass.includes(`_`)){
-              return ('Please enter a password containing none of the following characters: ! @ # * _ - ')
-            }
-            else if(pass.includes(`-`)){
-              return ('Please enter a password containing none of the following characters: ! @ # * _ - ')
-            }
-              else {
-              return (`Login to access your account.`)
-            }
-            }
-            noAdditionalCharacters(`I like music!`)
-            noAdditionalCharacters(`Party@theWaterpark`)
-            noAdditionalCharacters(`Whatisyour#`)
-            noAdditionalCharacters(`*6789998212`)
-            noAdditionalCharacters(`agoblinlives_thebridge`)
-            noAdditionalCharacters(`high-five`)
-            
+    if(pass.includes(`!`)){
+      return ('Please enter a password containing none of the following characters: ! @ # * _ - ')
+    } 
+    else if(pass.includes(`@`)){
+      return ('Please enter a password containing none of the following characters: ! @ # * _ - ')
+    }
+    else if(pass.includes(`#`)){
+      return ('Please enter a password containing none of the following characters: ! @ # * _ - ')
+    }
+    else if(pass.includes(`*`)){
+      return ('Please enter a password containing none of the following characters: ! @ # * _ - ')
+    }
+    else if(pass.includes(`_`)){
+      return ('Please enter a password containing none of the following characters: ! @ # * _ - ')
+    }
+    else if(pass.includes(`-`)){
+      return ('Please enter a password containing none of the following characters: ! @ # * _ - ')
+    }
+      else {
+      return (`Login to access your account.`)
+    }
+    }
+    noAdditionalCharacters(`I like music!`)
+    noAdditionalCharacters(`Party@theWaterpark`)
+    noAdditionalCharacters(`Whatisyour#`)
+    noAdditionalCharacters(`*6789998212`)
+    noAdditionalCharacters(`agoblinlives_thebridge`)
+    noAdditionalCharacters(`high-five`)
+    
+    //CLASS REVISION
+
+// const readline = require('readline');
+
+// const reader = readline.createInterface({
+//   input: process.stdin,
+//   output: process.stdout,
+// })
+
+// let welcome = 'welcome to the best pasword validator'
+// console.log(welcome)
+
+// reader.question('Enter your password',
+// function(input){
+//   if(input.length >= 10){
+//     console.log('Success, password meets requirement')
+//   } else {
+//     console.log('password doesnt meet requirements, has to be 10 characters long')
+//   }
+
+//   reader.close()
+// })
+
+
